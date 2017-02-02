@@ -24,7 +24,7 @@ It's worth noting that external services like  [Cloudflare](cloudflare.com) that
 
 ## Shared-Hosting
 
-If your paying a small amount and gaining access to your website through [CPanel](http://cpanel.com/) and uploading changes via FTP you're probably on a shared host.
+If you're paying a small amount and gaining access to your website through [CPanel](http://cpanel.com/) and uploading changes via FTP, you're probably on a shared host.
 
 What this is, is that the provider gives you limited access to certain folders where your website files will be located and then hides all of the server configuration to allow quick and simple website development.
 
@@ -33,7 +33,7 @@ The downside is that various clients may be using the same server your website i
 In this example you will not be able to edit configuration on the server to enable GZIP. To enable GZIP and speed up your website you'll need to either:
 
 * Contact your hosting provider and ask about enabling GZIP for your text based assets.
-* Use a external such as [Cloudflare](cloudflare.com) who do various things to speed up your website by acting as a proxy. One of these optimisations being enabling GZIP. Free plans are offered for users starting out.
+* Use an external solution such as [Cloudflare](cloudflare.com) who do various things to speed up your website by acting as a proxy, one of these optimisations being enabling GZIP. Free plans are offered for users starting out.
 
 ## NGINX
 
@@ -65,7 +65,7 @@ Default: ```off```
 
 When a file is smaller or equal to the amount of bytes configured on this property the file will skip compression.
 
-Reason for this is that as the file size decreases to small sizes <1kb GZIP becomes less and less useful. To save server resources these files are normally served as is, or even better embedded in the page itself as a **data image**.
+The reason for this is that as the file size decreases to small sizes <1kb GZIP becomes less and less useful. To save server resources these files are normally served as is, or even better embedded in the page itself as a **data image**.
 
 Default: ```20 bytes```
 
@@ -133,7 +133,7 @@ A safe default is ```any``` that will simple enable GZIP for all proxied request
 
 Configures which **Content-Type**'s should be compressed. This allows fine control over which type of files should be compressed to save server processing power if it's not needed.
 
-For a start it's a suggested to enable at least:
+For a start it's suggested to enable at least:
 
 ```gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml;```
 
