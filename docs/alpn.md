@@ -2,7 +2,7 @@ ALPN ([Application Level Protocol Negotiation](https://en.wikipedia.org/wiki/App
 
 ALPN replaces the older protocol NPN ([Next Protocol Negotiation](https://tools.ietf.org/id/draft-agl-tls-nextprotoneg-03.html)). As of Chrome 51 (May/June 2016) *NPN* has been deprecated in favour of ALPN.
 
-Ensuring that your web server is handle ALPN gives a bit of a performance boost as clients do not need to try and figure out which protocol could be best to use.
+Ensuring that your web server is handled ALPN gives a bit of a performance boost as clients do not need to try and figure out which protocol could be best to use.
 
 # How do I fix this ?
 
