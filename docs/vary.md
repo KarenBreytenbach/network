@@ -1,4 +1,4 @@
-The Vary header lets browser clients define how the server identifies each request. This allows the server to control how caching is handled on all it's clients.
+The Vary header lets browser clients define how the server identifies each request. This allows the server to control how caching is handled on all its clients.
 
 The "Accept-Encoding" is a quick way to tell clients and caching servers how to handle requests where GZIP is on and off, treating them as the same or unique.
 
@@ -6,7 +6,7 @@ When "Accept-Encoding" is configured as one of the options in Vary the GZIP and 
 
 # How do I fix this ?
 
-To fix simply define the header, with at a minimum the "Accept-Encoding" option.
+To fix simply define the header, with - at a minimum - the "Accept-Encoding" option.
 
 ## Apache
 
